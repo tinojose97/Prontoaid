@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Prontoaid</string>
+    <string name="name">Username</string>
+    <string name="pwd">Password</string>
+</resources>

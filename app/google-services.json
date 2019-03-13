@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "981969532639",
+    "firebase_url": "https://prontoaid-410ca.firebaseio.com",
+    "project_id": "prontoaid-410ca",
+    "storage_bucket": "prontoaid-410ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981969532639:android:e993b4844eb72ac1",
+        "android_client_info": {
+          "package_name": "com.example.prontoaid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981969532639-el51nbcfce9hhbsgneqaatetlod468nl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prontoaid",
+            "certificate_hash": "5a0fe01f34f52d73f8b26acda70995d876389207"
+          }
+        },
+        {
+          "client_id": "981969532639-hgkisnfiflek71rnd03hn483vrnl6oml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsmifd8YYWIALo6CT_GjHBDnMIPgH6WCA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981969532639-hgkisnfiflek71rnd03hn483vrnl6oml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
