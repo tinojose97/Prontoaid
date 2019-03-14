@@ -2,4 +2,8 @@
     <string name="app_name">Prontoaid</string>
     <string name="name">Username</string>
     <string name="pwd">Password</string>
+    <string name="title_activity_home_screen">Home_screen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

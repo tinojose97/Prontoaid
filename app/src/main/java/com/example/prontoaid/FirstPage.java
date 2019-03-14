@@ -26,7 +26,7 @@ public class FirstPage extends AppCompatActivity {
         signinButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FirstPage.this, Main_page.class));
+                startActivity(new Intent(FirstPage.this, Home_screen.class));
 
             }
         });
