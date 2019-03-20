@@ -19,7 +19,7 @@ public class signup_page extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(signup_page.this, Main_page.class));
+                startActivity(new Intent(signup_page.this, Home_screen.class));
             }
         });
     }

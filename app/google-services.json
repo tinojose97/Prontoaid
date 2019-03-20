@@ -1,21 +1,29 @@
 {
   "project_info": {
-    "project_number": "981969532639",
-    "firebase_url": "https://prontoaid-410ca.firebaseio.com",
-    "project_id": "prontoaid-410ca",
-    "storage_bucket": "prontoaid-410ca.appspot.com"
+    "project_number": "31572189943",
+    "firebase_url": "https://prontoaid-13fd8.firebaseio.com",
+    "project_id": "prontoaid-13fd8",
+    "storage_bucket": "prontoaid-13fd8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:981969532639:android:e993b4844eb72ac1",
+        "mobilesdk_app_id": "1:31572189943:android:e993b4844eb72ac1",
         "android_client_info": {
           "package_name": "com.example.prontoaid"
         }
       },
       "oauth_client": [
         {
-          "client_id": "981969532639-el51nbcfce9hhbsgneqaatetlod468nl.apps.googleusercontent.com",
+          "client_id": "31572189943-2k8do06c7753btc0h7dn9l6d94o1odc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prontoaid",
+            "certificate_hash": "165eaa29057bfe1656a40ad01b38205861a96a25"
+          }
+        },
+        {
+          "client_id": "31572189943-o0fhmroltbklreokendsj5vuv3ca0a3j.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.prontoaid",
@@ -23,13 +31,13 @@
           }
         },
         {
-          "client_id": "981969532639-hgkisnfiflek71rnd03hn483vrnl6oml.apps.googleusercontent.com",
+          "client_id": "31572189943-hgo3k5647opnet3upuuaa4ejd82jb1ev.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDsmifd8YYWIALo6CT_GjHBDnMIPgH6WCA"
+          "current_key": "AIzaSyAQPpPH597rfhh3YLvx4AL5N4e-w5_TmCk"
         }
       ],
       "services": {
@@ -40,7 +48,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "981969532639-hgkisnfiflek71rnd03hn483vrnl6oml.apps.googleusercontent.com",
+              "client_id": "31572189943-hgo3k5647opnet3upuuaa4ejd82jb1ev.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

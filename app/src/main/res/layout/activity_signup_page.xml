@@ -115,4 +115,16 @@
         android:text="JOIN THE PRONTOAID FAMILY"
         android:textSize="18sp" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="274dp"
+        android:layout_height="237dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="447dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        app:srcCompat="@drawable/capture" />
+
 </RelativeLayout>
