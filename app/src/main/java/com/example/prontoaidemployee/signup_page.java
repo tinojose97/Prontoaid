@@ -72,18 +72,21 @@ public class signup_page extends AppCompatActivity implements AdapterView.OnItem
                 EditText paswrd= (EditText)findViewById(R.id.password);
                 EditText cpaswrd= (EditText)findViewById(R.id.confirm_pswrd);
                 EditText phnno= (EditText)findViewById(R.id.phone_number);
+                EditText occpt=(EditText)findViewById(R.id.occupation);
                 Spinner sploc= (Spinner) findViewById(R.id.spinner );
 
                 if(fstname.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"Enter the first name",Toast.LENGTH_LONG).show();
                 else if(lstname.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"enter the last name",Toast.LENGTH_LONG).show();
+                else if(phnno.getText().toString().equals(""))
+                    Toast.makeText(signup_page.this,"Enter a valid phone number",Toast.LENGTH_LONG).show();
+                else if(occpt.getText().toString().equals(""))
+                    Toast.makeText(signup_page.this,"Enter an Occupation",Toast.LENGTH_LONG).show();
                 else if(paswrd.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"enter a password",Toast.LENGTH_LONG).show();
                 else if(cpaswrd.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"confirm password",Toast.LENGTH_LONG).show();
-                else if(phnno.getText().toString().equals(""))
-                    Toast.makeText(signup_page.this,"Enter a valid phone number",Toast.LENGTH_LONG).show();
                 else if(!sploc.isSelected())
                     Toast.makeText(signup_page.this,"select a location",Toast.LENGTH_LONG).show();
                 else
