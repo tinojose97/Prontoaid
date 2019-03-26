@@ -87,8 +87,11 @@ public class signup_page extends AppCompatActivity implements AdapterView.OnItem
                     Toast.makeText(signup_page.this,"enter a password",Toast.LENGTH_LONG).show();
                 else if(cpaswrd.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"confirm password",Toast.LENGTH_LONG).show();
+                else if(!paswrd.equals(cpaswrd))
+                    Toast.makeText(signup_page.this,"Password Does not match",Toast.LENGTH_LONG).show();
                 else if(!sploc.isSelected())
                     Toast.makeText(signup_page.this,"select a location",Toast.LENGTH_LONG).show();
+
                 else
                 startActivity(new Intent(signup_page.this, Home_screen.class));
             }
