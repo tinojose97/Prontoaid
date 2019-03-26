@@ -1,4 +1,4 @@
-package com.example.prontoaid;
+package com.example.prontoaidemployee;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.prontoaid", appContext.getPackageName());
+        assertEquals("com.example.prontoaidemployee", appContext.getPackageName());
     }
 }

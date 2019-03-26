@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.prontoaid">
+    package="com.example.prontoaidemployee">
 
     <application
         android:allowBackup="true"
@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Home_screen"
+            android:name="com.example.prontoaidemployee.Home_screen"
             android:label="@string/title_activity_home_screen"></activity>
-        <activity android:name=".signup_page" />
-        <activity android:name=".FirstPage">
+        <activity android:name="com.example.prontoaidemployee.signup_page" />
+        <activity android:name="com.example.prontoaidemployee.FirstPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

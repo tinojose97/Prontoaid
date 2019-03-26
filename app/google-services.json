@@ -57,6 +57,37 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31572189943:android:4522a6c98b97d9a4",
+        "android_client_info": {
+          "package_name": "com.example.prontoaidemployee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31572189943-hgo3k5647opnet3upuuaa4ejd82jb1ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQPpPH597rfhh3YLvx4AL5N4e-w5_TmCk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"

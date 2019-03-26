@@ -18,8 +18,7 @@
         android:layout_marginRight="89dp"
         android:ems="10"
         android:hint="User name"
-        android:inputType="number|textPersonName|text"
-        android:singleLine="false" />
+        android:singleLine="true" />
 
     <Button
         android:id="@+id/signinbtn"
@@ -68,7 +67,9 @@
         android:layout_marginTop="296dp"
         android:layout_marginEnd="89dp"
         android:layout_marginRight="89dp"
-        android:hint="Password" />
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true" />
 
     <ImageView
         android:id="@+id/imageView"
