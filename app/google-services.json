@@ -67,6 +67,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "31572189943-u4n6bpordk89ecdldd0cl5e8h9ri9o7c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prontoaidemployee",
+            "certificate_hash": "5a0fe01f34f52d73f8b26acda70995d876389207"
+          }
+        },
+        {
           "client_id": "31572189943-hgo3k5647opnet3upuuaa4ejd82jb1ev.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -81,8 +89,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31572189943-hgo3k5647opnet3upuuaa4ejd82jb1ev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

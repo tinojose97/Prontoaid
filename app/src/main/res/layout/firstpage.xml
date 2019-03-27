@@ -13,9 +13,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="226dp"
-        android:layout_marginEnd="89dp"
-        android:layout_marginRight="89dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginRight="98dp"
         android:ems="10"
         android:hint="User name"
         android:singleLine="true" />
@@ -28,8 +28,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="358dp"
-        android:layout_marginEnd="158dp"
-        android:layout_marginRight="158dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
         android:text="Sign in" />
 
 
@@ -40,9 +40,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="464dp"
-        android:layout_marginEnd="87dp"
-        android:layout_marginRight="87dp"
+        android:layout_marginTop="479dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:text="Join us" />
 
     <TextView
@@ -53,8 +53,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="428dp"
-        android:layout_marginEnd="82dp"
-        android:layout_marginRight="82dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
         android:text="           New to Prontoaid?    " />
 
     <EditText
@@ -64,9 +64,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="296dp"
-        android:layout_marginEnd="89dp"
-        android:layout_marginRight="89dp"
+        android:layout_marginTop="289dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginRight="98dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:singleLine="true" />
@@ -78,9 +78,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginRight="74dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
         app:srcCompat="@drawable/capture" />
 
 </RelativeLayout>

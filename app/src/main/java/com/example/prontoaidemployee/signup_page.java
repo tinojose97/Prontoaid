@@ -1,6 +1,7 @@
 package com.example.prontoaidemployee;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,12 +12,21 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class signup_page extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-
+FirebaseAuth auth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,18 +77,21 @@ public class signup_page extends AppCompatActivity implements AdapterView.OnItem
             @Override
             public void onClick(View v) {
 
+
                 EditText fstname=(EditText)findViewById(R.id.first_name);
                 EditText lstname=(EditText) findViewById(R.id.last_name);
                 EditText paswrd= (EditText)findViewById(R.id.password);
                 EditText cpaswrd= (EditText)findViewById(R.id.confirm_pswrd);
                 EditText phnno= (EditText)findViewById(R.id.phone_number);
                 EditText occpt=(EditText)findViewById(R.id.occupation);
-                Spinner sploc= (Spinner) findViewById(R.id.spinner );
+                EditText emaid=(EditText)findViewById(R.id.email);
 
                 if(fstname.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"Enter the first name",Toast.LENGTH_LONG).show();
                 else if(lstname.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"enter the last name",Toast.LENGTH_LONG).show();
+                else if(emaid.getText().toString().equals(""))
+                    Toast.makeText(signup_page.this,"enter the EmailID",Toast.LENGTH_LONG).show();
                 else if(phnno.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"Enter a valid phone number",Toast.LENGTH_LONG).show();
                 else if(occpt.getText().toString().equals(""))
@@ -89,9 +102,6 @@ public class signup_page extends AppCompatActivity implements AdapterView.OnItem
                     Toast.makeText(signup_page.this,"confirm password",Toast.LENGTH_LONG).show();
                 else if(!paswrd.equals(cpaswrd))
                     Toast.makeText(signup_page.this,"Password Does not match",Toast.LENGTH_LONG).show();
-                else if(!sploc.isSelected())
-                    Toast.makeText(signup_page.this,"select a location",Toast.LENGTH_LONG).show();
-
                 else
                 startActivity(new Intent(signup_page.this, Home_screen.class));
             }
