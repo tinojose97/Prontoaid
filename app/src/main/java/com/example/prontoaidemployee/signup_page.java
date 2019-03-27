@@ -35,6 +35,8 @@ FirebaseAuth auth;
 
 
 
+        FirebaseApp.initializeApp(this);
+        auth = FirebaseAuth.getInstance();
 
 
         // Spinner element
@@ -78,18 +80,20 @@ FirebaseAuth auth;
             public void onClick(View v) {
 
 
-                EditText fstname=(EditText)findViewById(R.id.first_name);
-                EditText lstname=(EditText) findViewById(R.id.last_name);
+                EditText name=(EditText)findViewById(R.id.name);
+
                 EditText paswrd= (EditText)findViewById(R.id.password);
                 EditText cpaswrd= (EditText)findViewById(R.id.confirm_pswrd);
                 EditText phnno= (EditText)findViewById(R.id.phone_number);
                 EditText occpt=(EditText)findViewById(R.id.occupation);
                 EditText emaid=(EditText)findViewById(R.id.email);
-
-                if(fstname.getText().toString().equals(""))
-                    Toast.makeText(signup_page.this,"Enter the first name",Toast.LENGTH_LONG).show();
-                else if(lstname.getText().toString().equals(""))
-                    Toast.makeText(signup_page.this,"enter the last name",Toast.LENGTH_LONG).show();
+                final String nme = name.getText().toString().trim();
+                final String email=emaid.getText().toString().trim();
+                final  String password=paswrd.getText().toString().trim();
+                final String phoneno=phnno.getText().toString().trim();
+                final  String job=occpt.getText().toString().trim();
+                if(name.getText().toString().equals(""))
+                    Toast.makeText(signup_page.this,"Enter the  name",Toast.LENGTH_LONG).show();
                 else if(emaid.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"enter the EmailID",Toast.LENGTH_LONG).show();
                 else if(phnno.getText().toString().equals(""))
@@ -100,11 +104,27 @@ FirebaseAuth auth;
                     Toast.makeText(signup_page.this,"enter a password",Toast.LENGTH_LONG).show();
                 else if(cpaswrd.getText().toString().equals(""))
                     Toast.makeText(signup_page.this,"confirm password",Toast.LENGTH_LONG).show();
-                else if(!paswrd.equals(cpaswrd))
+                else if(!paswrd.getText().toString().equals(cpaswrd.getText().toString()))
                     Toast.makeText(signup_page.this,"Password Does not match",Toast.LENGTH_LONG).show();
                 else
-                startActivity(new Intent(signup_page.this, Home_screen.class));
-            }
+                { auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(signup_page.this, new OnCompleteListener<AuthResult>() {
+
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Toast.makeText(signup_page.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
+                        if (!task.isSuccessful()) {
+                            Toast.makeText(signup_page.this, "Authentication failed." + task.getException(),
+                                    Toast.LENGTH_SHORT).show();
+                        } else {
+
+
+
+                            startActivity(new Intent(signup_page.this, Home_screen.class));
+                            finish();
+                        }
+                       // progressDialog.dismiss();
+                    }
+                });
+            }}
         });
     }
 
