@@ -27,7 +27,8 @@ public class Home_screen extends AppCompatActivity {
                     mTextMessage.setText("Notifications");
                     return true;
                 case R.id.navigation_profile:
-                    mTextMessage.setText("Me");
+                    mTextMessage.setText("Me")
+                    ;
                     return true;
             }
             return false;
